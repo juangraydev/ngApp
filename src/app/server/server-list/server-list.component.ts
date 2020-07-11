@@ -9,7 +9,7 @@ import { FormGroup } from '@angular/forms';
 })
 export class ServerListComponent implements OnInit {
 
-  formFilter: FormGroup
+  serverForm: FormGroup;
   filters = []
 
 

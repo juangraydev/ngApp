@@ -7,11 +7,17 @@
   </div>
   <div class="modal-body">
     <form [formGroup]="serverForm" >
-      <button type="button" (click)="addfilter()">add input</button>
+      <button 
+        class="btn btn-primary"
+        type="button" 
+        (click)="addfilter()"
+      >add input</button>
       <div *ngFor="let filter of filters">
         <input
           name="name"
           formControlName="name"
+          placeholder="name"
+          class="form-control my-2"
         >
       </div>
     </form>
